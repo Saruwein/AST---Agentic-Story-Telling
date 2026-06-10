@@ -4,6 +4,19 @@ AST is an experimental framework for writing and editing stories with agentic AI
 
 The repository separates the manuscript from the meta-information an agent needs to work responsibly: style, characters, worldbuilding, continuity, and project rules.
 
+This repo is a **template**. To start a new story, create a new repository from this template — you get the full agent workflow, skills, and structure, then fill in your own story content.
+
+---
+
+## Quickstart
+
+1. Create a new repo from this template (GitHub: green "Use this template" button)
+2. Clone your new repo
+3. Open in opencode and type `/connect` to set up a provider
+4. Start writing — ask the **writer** agent to draft your first chapter
+
+---
+
 ## How to use this Git repo
 
 Use `main` as the stable production branch.
@@ -23,16 +36,23 @@ Commit changes often and write clear commit messages.
 
 Merge changes back into `main` only when they are stable and intended to become part of the project baseline.
 
+To pull upstream template changes into your story repo:
 
-## Open Code 
+    git remote add upstream https://github.com/Saruwein/AST---Agentic-Story-Telling
+    git fetch upstream
+    git cherry-pick <commit-hash>
+
+---
+
+## Open Code setup
 
 Connect:
-* type '/connect'
-* find a provider or
-  search 'other' to enter a custom provider
-* enter API key when prompted
-* privide opencode.json
+- type `/connect`
+- find a provider or search 'other' to enter a custom provider
+- enter API key when prompted
+- opencode loads config from `.opencode/opencode.jsonc`
 
+---
 
 ## Glossaries
 
@@ -64,21 +84,17 @@ Each agent carries its own permission rules. Ask an agent by name (`"act as writ
 
 Skills are loaded automatically when the task matches their description.
 
-## How this applies here
+## Project structure
 
-AST uses the repo as a structured writing environment.
+See `project structure.md` for a full layout reference and `dev docs.md` for the architecture overview.
 
-The manuscript lives in `mainmatter`.
-
-Agent-facing notes live in `meta-mainmatter`.
-
-Style is tracked under `meta-mainmatter/style`.
-
-Characters are tracked under `meta-mainmatter/characters`.
-
-Worldbuilding is tracked under `meta-mainmatter/worldbuilding`.
-
-The goal is to make AI-assisted storytelling more controllable, traceable, and useful: the agent can help generate and revise text, but the project structure keeps the human author in control.
+- Manuscript → `mainmatter/`
+- Agent notes → `meta-mainmatter/`
+- Style → `meta-mainmatter/style/`
+- Characters → `meta-mainmatter/characters/`
+- Worldbuilding → `meta-mainmatter/worldbuilding/`
+- Plot outline → `plot.md`
+- Agent and skill definitions → `.opencode/agents/` and `.opencode/skills/`
 
 ## Legal note
 

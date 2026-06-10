@@ -57,20 +57,10 @@ meta-mainmatter/style/character styles/
 
 ## Style inheritance
 
-For handling rules, see:
+For handling rules and the practical order, see:
 
 ```text
 meta-mainmatter/style/style policy.md
-```
-
-Practical order:
-
-```text
-default style.md
-→ global style.md
-→ chapter style
-→ character style for character-owned language
-→ current human author instruction
 ```
 
 ## Deviation log

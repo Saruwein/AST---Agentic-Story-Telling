@@ -32,9 +32,10 @@ All agents are `mode: subagent` and carry their own `permission:` rules.
 `.opencode/skills/<name>/SKILL.md` — one folder per skill.
 
 | Skill | Triggers on |
-|---|---|
+|---|---|---|
 | `writer-plot` | Plot outlining, beat structure, scene order |
 | `writer-prose` | Drafting or revising chapter prose |
+| `writer-edit` | Revising prose based on reader/lectorate feedback |
 | `reader-analysis` | Reader-perspective feedback (summary, depiction, vibe) |
 | `lectorate-style` | Style assessment against 7 categories |
 
@@ -99,6 +100,7 @@ When a chapter is drafted:
 1. **Writer** creates `mainmatter/Chap{N}.md` + `meta-mainmatter/chapters/Chap{N}-meta.md`
 2. **Reader** reviews the chapter and writes `meta-mainmatter/chapters/Chap{N}-reader-rev.md`
 3. **Lectorate** checks consistency and writes `meta-mainmatter/chapters/Chap{N}-lectorate-consistency.md`
+4. **Writer** revises the chapter using the `writer-edit` skill, incorporating feedback and bumping the revision number
 
 ### Reviewing style
 Ask the **lectorate** agent to assess a chapter against the seven style categories.

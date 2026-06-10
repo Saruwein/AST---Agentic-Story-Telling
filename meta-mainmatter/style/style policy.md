@@ -47,3 +47,9 @@ meta-mainmatter/style/character styles/
 ```
 
 The agent must not treat style anchors as hard rules (see Rule 1 in `rules.md`).
+
+## Editing with style
+
+When the writer revises prose based on reader or lectorate feedback, the style inheritance chain (default → global → chapter → character → human instruction) governs which style anchors to follow. See `.opencode/skills/writer-edit/SKILL.md` for the full editing workflow.
+
+Editing should preserve deliberate style deviations while addressing accidental ones. The lectorate consistency check identifies which deviations may be unintended.

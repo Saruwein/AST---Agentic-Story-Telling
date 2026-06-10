@@ -21,7 +21,7 @@ Every chapter produces up to four files:
 2. **Reader** reads `mainmatter/Chap{N}.md` and writes `meta-mainmatter/chapters/Chap{N}-reader-rev.md` — natural-language impressions only, no metadata references.
 3. **Lectorate** reads `mainmatter/Chap{N}.md` and writes `meta-mainmatter/chapters/Chap{N}-lectorate-consistency.md` — style assessment against the seven categories, worldbuilding/character continuity check, and governance compliance.
 
-Steps 2 and 3 can run in parallel. The writer may revise the chapter after receiving feedback — increment the meta file's revision field and note what changed.
+Steps 2 and 3 can run in parallel. The writer may revise the chapter after receiving feedback — load the `writer-edit` skill, increment the meta file's revision field, and note what changed.
 
 ## Meta file template (`Chap{N}-meta.md`)
 

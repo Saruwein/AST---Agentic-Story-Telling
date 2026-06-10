@@ -1,37 +1,71 @@
-# Storytelling mit KI
-### 
+# AST — Agentic Storytelling
 
----
+AST is an experimental framework for writing and editing stories with agentic AI support.
 
-## API-Schlüssel für KI:connect / RWTHgpt
+The repository separates the manuscript from the meta-information an agent needs to work responsibly: style, characters, worldbuilding, continuity, and project rules.
 
-OpenCode verwendet in diesem Template den Anbieter `kiconnectnrw:rwth` bzw. `kiconnectnrw:fhaachen` aus `./.opencode/opencode.jsonc`. Dafür brauchen Teilnehmende einen persönlichen API-Schlüssel von KI:connect / RWTHgpt.
+## How to use this Git repo
 
-Die offizielle Anleitung findest du hier:
+Use `main` as the stable production branch.
 
-- [API-Keys und Zugriff (RWTHgpt / KI:connect)](https://help.itc.rwth-aachen.de/service/1808737e10424937b76e564ed15d8028/article/4f07ebbbc8c4477a8db9baa441494941/)
+Create separate branches for storylines, experiments, translations, or major revisions.
 
-Kurzfassung der Schritte:
+    git checkout -b storyline/book-001
+    git checkout -b experiment/nonlinear-structure
+    git checkout -b translation/de
 
-1. Mit RWTH Single Sign-On an der [KI:connect-Weboberfläche](https://chat.kiconnect.nrw/) anmelden.
-2. Links unten den eigenen Namen auswählen.
-3. Die **API-Schlüsselverwaltung** öffnen.
-4. Einen **Schlüssel erstellen** und den persönlichen API-Schlüssel anlegen.
-5. Den Platzhalter `__PERSONAL_API_KEY__` in `./.opencode/opencode.jsonc` mit dem eigenen Schlüssel ersetzen.
+Commit changes often and write clear commit messages.
 
-Der Schlüssel ist vertraulich zu behandeln und darf nicht ins Repository eingecheckt werden.
+    git add .
+    git commit -m "Draft chapter 001"
+    git commit -m "Update global style notes"
+    git commit -m "Track monastery kitchen worldbuilding"
 
----
+Merge changes back into `main` only when they are stable and intended to become part of the project baseline.
 
-## 🚨 Leitplanken gegen KI-Fehler (Die 5-Punkte-Checkliste)
+## How to work with agents
 
-Wenn du Code von einem Agenten prüfen oder generieren lässt, achte stets auf diese 5 Punkte:
-1.  **Erfüllt es die Aufgabe?** (Spec danebenlegen und Punkt für Punkt prüfen)
-2.  **Randfälle bedacht?** (Leere Eingaben, Null-Werte, unerwartete Formate)
-3.  **Gibt es Sicherheitskonflikte?** (SQL-Injections, hartcodierte Secrets/Passwörter)
-4.  **Sind Struktur & Namen lesbar?** (Verständliche Variablennamen, Funktionslängen)
-5.  **Wo halluziniert der Code?** (Nicht existierende Bibliotheken, erfundene Parameter)
+The human author owns the story.
 
----
+Agents may help plan, draft, critique, edit, revise, translate, and track continuity. They should not silently make major creative, structural, stylistic, character, or worldbuilding changes.
 
-Viel Erfolg und viel Spaß beim Experimentieren im Workshop! 💻✨
+Ask agents to work in clear modes:
+
+    Plan this chapter.
+    Draft this section.
+    Critique this scene.
+    Revise this passage.
+    Check continuity.
+    Update the relevant meta files.
+
+When a change is large, the agent should propose it first by showing:
+
+    Current version:
+    Proposed change:
+    Reason:
+    Risk:
+    Authorization needed:
+
+## How this applies here
+
+AST uses the repo as a structured writing environment.
+
+The manuscript lives in `mainmatter`.
+
+Agent-facing notes live in `meta-mainmatter`.
+
+Style is tracked under `meta-mainmatter/style`.
+
+Characters are tracked under `meta-mainmatter/characters`.
+
+Worldbuilding is tracked under `meta-mainmatter/worldbuilding`.
+
+The goal is to make AI-assisted storytelling more controllable, traceable, and useful: the agent can help generate and revise text, but the project structure keeps the human author in control.
+
+## Legal note
+
+AST is an experimental writing and workflow framework. It is provided as-is, without warranty.
+
+Users are responsible for reviewing all AI-assisted outputs before publication or distribution. This includes checking for factual errors, copyright issues, privacy concerns, unwanted similarities to existing works, and compliance with applicable laws, contracts, platform rules, and publishing requirements.
+
+The framework does not replace legal, editorial, or publishing advice.

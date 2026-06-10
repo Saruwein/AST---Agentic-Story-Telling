@@ -19,6 +19,7 @@ permission:
   bash:
     "*": ask
     "git *": allow
+    "git commit *": ask
     "mv *": allow
     "mkdir *": allow
     "cp *": ask

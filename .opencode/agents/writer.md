@@ -16,6 +16,8 @@ permission:
     "meta-mainmatter/glossary.md": allow
   bash:
     "*": deny
+    "git *": allow
+    "git commit *": ask
   task: allow
   question: allow
   todowrite: allow

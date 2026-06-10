@@ -11,6 +11,15 @@ description: >-
 Before drafting, check for existing chapter/section header conventions
 in `mainmatter/`. If none exist, ask the user for a format example.
 
+Use the naming convention: `mainmatter/Chap{N}.md` where `{N}` is a
+zero-padded three-digit number (`001`, `002`, ...). When you create a
+chapter, also create its meta file at
+`meta-mainmatter/chapters/Chap{N}-meta.md` (POV, timeline, locations,
+characters, word count).
+
+See `appendix/writer/chapter exchange workflow.md` for the full naming
+policy and meta file template.
+
 While writing, consult:
 - `global style.md` — active project style
 - `default style.md` — relevant category anchors

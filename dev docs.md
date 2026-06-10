@@ -65,6 +65,9 @@ Skills are loaded automatically when the task matches their `description`.
 | `meta-mainmatter/worldbuilding/places/` | Locale-based worldbuilding | lectorate |
 | `meta-mainmatter/worldbuilding/timeline/` | Event order, dates, anachronisms | lectorate |
 | `meta-mainmatter/glossary.md` | Story-specific terms (places, names, objects) | writer |
+| `meta-mainmatter/chapters/Chap{N}-meta.md` | Chapter metadata (POV, timeline, locations) | writer |
+| `meta-mainmatter/chapters/Chap{N}-reader-rev.md` | Reader-perspective review | reader |
+| `meta-mainmatter/chapters/Chap{N}-lectorate-consistency.md` | Consistency check (style, continuity) | lectorate |
 
 ## Configuration
 
@@ -90,6 +93,12 @@ Skills are loaded automatically when the task matches their `description`.
 git checkout -b storyline/my-story
 ```
 Write on the branch. Merge to `main` when stable.
+
+### Chapter exchange workflow
+When a chapter is drafted:
+1. **Writer** creates `mainmatter/Chap{N}.md` + `meta-mainmatter/chapters/Chap{N}-meta.md`
+2. **Reader** reviews the chapter and writes `meta-mainmatter/chapters/Chap{N}-reader-rev.md`
+3. **Lectorate** checks consistency and writes `meta-mainmatter/chapters/Chap{N}-lectorate-consistency.md`
 
 ### Reviewing style
 Ask the **lectorate** agent to assess a chapter against the seven style categories.

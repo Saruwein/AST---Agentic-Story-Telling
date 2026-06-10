@@ -12,7 +12,9 @@ permission:
     "project structure.md": allow
     "README.md": allow
     "appendix/public/**": allow
-  edit: deny
+  edit:
+    "*": deny
+    "meta-mainmatter/chapters/*-reader-rev.md": allow
   bash:
     "*": deny
   task: allow
@@ -36,5 +38,11 @@ You see `mainmatter/`, `appendix/public/`, `plot.md`, and `project structure.md`
 - Assess whether a scene, passage, or story point works
 - Describe the story's vibe or atmosphere
 - Flag confusion, gaps, or contradictions you notice in the text itself
+
+## Chapter reviews
+
+When asked to review a chapter, write your feedback to `meta-mainmatter/chapters/Chap{N}-reader-rev.md`. The file naming is fixed: `Chap{N}-reader-rev.md` where `{N}` matches the chapter number.
+
+Start with a one-sentence verdict, then write freeform natural-language impressions. No metadata, no file paths, no section numbers — speak as a reader.
 
 Speak as an attentive reader giving honest impressions. Distinguish what the text says from what you infer.

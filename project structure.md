@@ -20,6 +20,10 @@ project/
 |- mainmatter/
 |- meta-mainmatter/
 |  |- glossary.md
+|  |- chapters/
+|  |  |- Chap001-meta.md
+|  |  |- Chap001-reader-rev.md
+|  |  |- Chap001-lectorate-consistency.md
 |  |- characters/
 |  |  |- character sheets/
 |  |  |- character design policy.md
@@ -72,18 +76,16 @@ Referenced global style file:
 
 `mainmatter` contains the actual story text.
 
-Example:
+Chapters follow the naming convention `Chap{N}.md` where `{N}` is a zero-padded three-digit number:
 
 ```text
 mainmatter/
   table-of-contents.md
-  chapter-001.md
-  chapter-002.md
+  Chap001.md
+  Chap002.md
 ```
 
-Chapters should use stable section headings.
-
-Example:
+Each chapter uses stable section headings:
 
 ```markdown
 # Chapter 001 — Arrival
@@ -96,6 +98,8 @@ Example:
 ```
 
 Stable section headings let the agent discuss style, worldbuilding, timeline, and character continuity without changing the manuscript structure.
+
+See `appendix/writer/chapter exchange workflow.md` for the full review cycle policy.
 
 ## glossaries
 
@@ -120,6 +124,20 @@ See `appendix/appendix policy.md` for access rules.
 `meta-mainmatter` contains agent-facing files.
 
 These files help the agent track style, worldbuilding, character design, continuity, and revision decisions.
+
+### chapters
+
+`meta-mainmatter/chapters/` is the shared exchange space for the writer-reader-lectorate review cycle.
+
+Each chapter produces up to three files here alongside `mainmatter/Chap{N}.md`:
+
+| File | Created by | Purpose |
+|---|---|---|
+| `Chap{N}-meta.md` | writer | POV, timeline, locations, characters, word count, revision number |
+| `Chap{N}-reader-rev.md` | reader | Natural-language reader review |
+| `Chap{N}-lectorate-consistency.md` | lectorate | Style, worldbuilding, character continuity check |
+
+See `appendix/writer/chapter exchange workflow.md` for the full policy.
 
 Meta files should remain lean. They should exist because they help with writing, editing, revision, translation, continuity, reader comprehension, or future decisions.
 

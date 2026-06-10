@@ -88,8 +88,8 @@ Skills are loaded automatically when the task matches their description.
 
 See `project structure.md` for a full layout reference and `dev docs.md` for the architecture overview.
 
-- Manuscript → `mainmatter/`
-- Agent notes → `meta-mainmatter/`
+- Manuscript → `mainmatter/` (chapters named `Chap001.md`, `Chap002.md`, ...)
+- Chapter exchange → `meta-mainmatter/chapters/` (meta, reader review, lectorate consistency)
 - Style → `meta-mainmatter/style/`
 - Characters → `meta-mainmatter/characters/`
 - Worldbuilding → `meta-mainmatter/worldbuilding/`

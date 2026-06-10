@@ -19,6 +19,7 @@ project/
 |- frontmatter/
 |- mainmatter/
 |- meta-mainmatter/
+|  |- glossary.md
 |  |- characters/
 |  |  |- character sheets/
 |  |  |- character design policy.md
@@ -33,6 +34,7 @@ project/
 |  |  |- timeline/
 |  |  |- worldbuilding policy.md
 |- plot.md
+|- glossary.md
 |- .gitignore
 |- project structure.md
 |- rules.md
@@ -94,6 +96,14 @@ Example:
 ```
 
 Stable section headings let the agent discuss style, worldbuilding, timeline, and character continuity without changing the manuscript structure.
+
+## glossaries
+
+Two glossary files serve different scopes:
+
+`glossary.md` at the project root defines framework terms — roles, agents, style categories, skills, policies. Maintained by the worktree engineer. Stable across branches.
+
+`meta-mainmatter/glossary.md` tracks story-specific terms — character names, places, objects, concepts, events — with references to where they appear. Maintained by the writer. Changes per branch.
 
 ## appendix
 

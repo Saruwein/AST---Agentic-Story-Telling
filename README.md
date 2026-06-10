@@ -34,6 +34,12 @@ Connect:
 * privide opencode.json
 
 
+## Glossaries
+
+- `glossary.md` — framework terms (all agents except reader reference this)
+- `meta-mainmatter/glossary.md` — story-specific terms per branch (writer maintains, lectorate reads)
+- `appendix/public/` may contain reader-facing glossaries for the finished book
+
 ## Agents
 
 Six specialised agents help with different aspects of the project:

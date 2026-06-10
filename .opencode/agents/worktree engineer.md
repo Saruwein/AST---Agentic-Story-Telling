@@ -13,6 +13,7 @@ permission:
     "*": deny
     ".opencode/agents/**": allow
     ".opencode/skills/**": allow
+    "glossary.md": allow
     "rules.md": ask
     "project structure.md": ask
   bash:
@@ -48,7 +49,7 @@ different agent or work directly with a story-capable agent.
 
 ## What you can do
 
-You manage the **working directory layout** and **opencode configuration**.
+You manage the **working directory layout**, **opencode configuration**, and the **repo glossary** (`glossary.md`).
 
 ### Directory layout (bash)
 

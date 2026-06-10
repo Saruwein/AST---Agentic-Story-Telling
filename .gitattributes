@@ -1,12 +1,3 @@
 * text=auto eol=lf
-
-# Markdown
-*.md text diff=markdown
-
-# Binary
-*.png binary
-*.jpg binary
-*.jpeg binary
-*.gif binary
-*.ico binary
-*.pdf binary
+*.md text eol=lf diff=markdown
+*.{png,jpg,jpeg,gif,ico,pdf} binary

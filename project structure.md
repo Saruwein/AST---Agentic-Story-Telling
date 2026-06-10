@@ -8,7 +8,14 @@ The project separates reader-facing manuscript files from agent-facing meta file
 
 ```text
 project/
+|- .opencode/
+|  |- agents/
+|  |- skills/
+|  |- opencode.jsonc
 |- appendix/
+|  |- appendix policy.md
+|  |- public/
+|  |- writer/
 |- frontmatter/
 |- mainmatter/
 |- meta-mainmatter/
@@ -25,6 +32,7 @@ project/
 |  |  |- places/
 |  |  |- timeline/
 |  |  |- worldbuilding policy.md
+|- plot.md
 |- .gitignore
 |- project structure.md
 |- rules.md
@@ -89,19 +97,13 @@ Stable section headings let the agent discuss style, worldbuilding, timeline, an
 
 ## appendix
 
-`appendix` contains human-facing material derived from the project.
+`appendix` contains supplementary material split into two sections.
 
-This may include:
+`appendix/public/` — reader-facing reference: glossaries, chronologies, character lists, worldbuilding summaries, maps, translator notes. Visible to the reader agent. Anything referenced in the TOC gets appended to the finished book.
 
-```text
-glossary.md
-chronology.md
-character-list.md
-worldbuilding-summary.md
-translator-notes.md
-```
+`appendix/writer/` — working appendices for the writer: extended notes, alternate drafts, research. Not visible to the reader agent.
 
-Not every meta file belongs in the appendix. The appendix contains only what the human author wants to preserve in readable form.
+See `appendix/appendix policy.md` for access rules.
 
 ## meta-mainmatter
 

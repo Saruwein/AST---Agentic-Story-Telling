@@ -1,141 +1,49 @@
 # style policy.md
 
-This file tells the agent how to handle style.
-
-Style means the preferred behavior of the narrative. It includes prose, pacing, clarity, tension shape, reader orientation, description density, dialogue behavior, temporal complexity, local complexity, surprise logic, repetition, intensity, and worldbuilding density.
+This file tells the agent how to handle style. Style means the preferred behavior of the narrative — prose, pacing, tension, clarity, reader orientation, description, dialogue, and more.
 
 ## File roles
 
-```text
-default style.md
-= starting stylistic defaults
+- `default style.md` — starting stylistic defaults (advisory)
+- `global style.md` — active project-specific style
+- `style policy.md` — how the agent may handle style (procedural)
+- `chapter styles/` — per-chapter style notes
+- `character styles/` — character voice and diction notes
 
-global style.md
-= active project-specific style
-
-style policy.md
-= how the agent may handle style
-```
-
-The agent must not confuse these files.
-
-`default style.md` is advisory.  
-`global style.md` is project-specific.  
-`style policy.md` is procedural.
+`default style.md` is advisory. `global style.md` is project-specific. `style policy.md` is procedural. Do not confuse them.
 
 ## Style anchors are not rules
 
-Style anchors are default pressures, not commandments.
-
-The agent may use them to draft, evaluate, revise, translate, or explain stylistic behavior, but it must not turn them into a checklist for the human author.
-
-A strong story may deliberately violate any default style anchor.
+Style anchors are default pressures, not commandments. A strong story may deliberately violate any default. Do not turn anchors into a compliance checklist.
 
 ## Human author instruction wins
 
 The current instruction from the human author overrides stored style files unless it violates a hard rule in `rules.md`.
 
-## Do not edit style governance silently
+## Style inheritance
 
-The agent must ask before editing:
+Practical order: `default style.md` → `global style.md` → chapter style → character style (for character-owned language) → current human author instruction.
 
-```text
-style policy.md
-default style.md
-global style.md
-rules.md
-project structure.md
-chapter structure
-naming conventions
-style inheritance logic
-```
-
-The agent may propose such changes, but must not make them silently.
-
-## Ask before major stylistic shifts
-
-The agent must ask before making major stylistic shifts.
-
-Major stylistic shifts include changing:
-
-```text
-the project’s prose baseline
-the dominant tense
-the dominant point of view
-the dominant chronology
-the density of worldbuilding
-the default level of reader orientation
-the default level of violence, sex, cruelty, or shock
-the default level of dialect, jargon, archaism, or invented language
-```
-
-## Use juxtaposition for major style proposals
-
-When proposing a major stylistic change, use this format:
-
-```text
-Current style:
-What the story is doing now.
-
-Proposed style:
-What would change.
-
-Reason:
-Why the change may help.
-
-Risk:
-What may become harder, heavier, less coherent, or less readable.
-
-Authorization needed:
-What the human author must approve.
-```
+Chapter style applies to general narration, pacing, density, and tone. Character style applies mainly to dialogue, direct thought, letters, testimony, diary entries, quoted speech, or narration assigned to that character.
 
 ## Track meaningful deviations
 
-The agent should track meaningful deviations from `global style.md`.
+Track deviations from `global style.md` when they affect drafting, editing, revision, translation, reader comprehension, continuity, character voice, worldbuilding, pacing, tone, or local readability. Do not record every small variation.
 
-A deviation is meaningful when it affects:
+## Consider reader load
 
-```text
-drafting
-editing
-revision
-translation
-reader comprehension
-continuity
-character voice
-worldbuilding
-pacing
-tone
-local readability
-```
+When evaluating readability, consider how stylistic deviations affect reader load. A consistent global deviation is easier to adapt to than many abrupt local deviations. This is advisory, not a hard score.
 
-The agent should not record every small variation.
+## Style layer
 
-## Consider reader load during evaluation
-
-When evaluating readability or editorial quality, the agent should consider how stylistic deviations affect reader load.
-
-A consistent global deviation is usually easier for the reader to adapt to than many abrupt local deviations. Heavy local deviations may still be excellent, but they usually need clearer artistic purpose or stronger contextual support.
-
-This is advisory, unweighted, and untested. The agent must not treat it as a hard score.
-
-## Style inheritance
-
-Practical order:
+Style is tracked through these files:
 
 ```text
-default style.md
-→ global style.md
-→ chapter style
-→ character style for character-owned language
-→ current human author instruction
+meta-mainmatter/style/style policy.md
+meta-mainmatter/style/default style.md
+meta-mainmatter/style/global style.md
+meta-mainmatter/style/chapter styles/
+meta-mainmatter/style/character styles/
 ```
 
-This order is domain-aware.
-
-Chapter style applies to the chapter’s general narration, pacing, density, and tone.
-
-Character style applies mainly to dialogue, direct thought, letters, testimony, diary entries, quoted speech, or narration assigned to that character.
-
-The human author can override all of it.
+The agent must not treat style anchors as hard rules (see Rule 1 in `rules.md`).

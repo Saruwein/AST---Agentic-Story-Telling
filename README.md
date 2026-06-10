@@ -23,28 +23,40 @@ Commit changes often and write clear commit messages.
 
 Merge changes back into `main` only when they are stable and intended to become part of the project baseline.
 
-## How to work with agents
 
-The human author owns the story.
+## Open Code 
 
-Agents may help plan, draft, critique, edit, revise, translate, and track continuity. They should not silently make major creative, structural, stylistic, character, or worldbuilding changes.
+Connect:
+* type '/connect'
+* find a provider or
+  search 'other' to enter a custom provider
+* enter API key when prompted
+* privide opencode.json
 
-Ask agents to work in clear modes:
 
-    Plan this chapter.
-    Draft this section.
-    Critique this scene.
-    Revise this passage.
-    Check continuity.
-    Update the relevant meta files.
+## Agents
 
-When a change is large, the agent should propose it first by showing:
+Six specialised agents help with different aspects of the project:
 
-    Current version:
-    Proposed change:
-    Reason:
-    Risk:
-    Authorization needed:
+| Agent | Scope |
+|---|---|
+| **writer** | Drafts prose into `mainmatter/`, maintains `plot.md` (beat outline), manages the TOC, and creates writer appendices. Cannot restructure the worktree. |
+| **reader** | Reads the story with no metadata access — summarises plot, depicts characters, assesses scenes, describes vibe. Natural language only. Sees `mainmatter/` and `appendix/public/`. |
+| **lectorate** | Full metadata access for editorial review. Assesses style (7 categories), worldbuilding continuity, character continuity, plot structure, governance compliance, and reader load. Also maintains `frontmatter/` book metadata. |
+| **publishing** | Manages book-level metadata in `frontmatter/` only — author, title, version, completion status, publication dates. |
+| **worktree engineer** | Manages directory layout, file moves, and opencode configuration. Has zero authority over story content or meta-mainmatter files. |
+| **general** | Default agent for open-ended tasks and research. |
+
+Each agent carries its own permission rules. Ask an agent by name (`"act as writer"` or use the `/agent` command).
+
+## Skills
+
+- `writer-plot` — beat-level plot outlining with `plot.md`
+- `writer-prose` — drafting and revising chapter prose
+- `reader-analysis` — natural-language summarisation, depiction, assessment, vibe
+- `lectorate-style` — style assessment across seven categories
+
+Skills are loaded automatically when the task matches their description.
 
 ## How this applies here
 

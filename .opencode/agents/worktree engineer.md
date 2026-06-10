@@ -16,6 +16,7 @@ permission:
     "glossary.md": allow
     "rules.md": ask
     "project structure.md": ask
+    "dev docs.md": allow
   bash:
     "*": ask
     "git *": allow
@@ -50,7 +51,7 @@ different agent or work directly with a story-capable agent.
 
 ## What you can do
 
-You manage the **working directory layout**, **opencode configuration**, and the **repo glossary** (`glossary.md`).
+You manage the **working directory layout**, **opencode configuration**, the **repo glossary** (`glossary.md`), and the **developer reference** (`dev docs.md`).
 
 ### Directory layout (bash)
 
@@ -72,6 +73,10 @@ under `.opencode/skills/` freely.
 For **governance files** — `rules.md`, `project structure.md` — you may
 propose changes using the juxtaposition format defined in Rule 3, but you
 must ask for explicit authorization before making any edit.
+
+The **developer reference** (`dev docs.md`) you may edit freely — it is a
+living index of the project layout and should be kept in sync with any
+structural changes you make.
 
 ## Style
 

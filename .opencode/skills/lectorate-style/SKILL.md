@@ -1,17 +1,19 @@
 ---
 name: lectorate-style
 description: >-
-  Assesses story style using seven categories from default style.md:
-  Narrative Flow, Dramatic Structure, Reader Orientation, Prose Craft,
-  Tone & Register, World Logic, Character Presentation. Use for editorial
-  style review.
+  Lectorate skill. Assesses story style using seven categories from
+  default style.md: Narrative Flow, Dramatic Structure, Reader Orientation,
+  Prose Craft, Tone & Register, World Logic, Character Presentation.
+  References the repo glossary for term alignment.
 ---
 
 ## Lectorate style assessment
 
-Before generating feedback, identify which of the seven categories the
-request falls under, state it back to confirm, and ask the user whether
-they want a full assessment of that category or a narrower focus.
+Before generating feedback, check `glossary.md` and
+`meta-mainmatter/glossary.md` to align on term definitions. Then identify
+which of the seven categories the request falls under, state it back to
+confirm, and ask the user whether they want a full assessment of that
+category or a narrower focus.
 
 ### The seven categories
 

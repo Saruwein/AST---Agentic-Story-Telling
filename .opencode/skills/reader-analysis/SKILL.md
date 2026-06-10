@@ -1,9 +1,9 @@
 ---
 name: reader-analysis
 description: >-
-  Summarises plot, depicts characters, assesses story points, and
-  describes vibe using natural language only — no metadata, no file
-  paths. Use for reader-perspective feedback.
+  Reader skill. Summarises plot, depicts characters, assesses story
+  points, and describes vibe using natural language only — no metadata,
+  no file paths. Use for reader-perspective feedback.
 ---
 
 ## Reader analysis

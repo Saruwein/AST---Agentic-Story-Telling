@@ -1,9 +1,9 @@
 ---
 name: writer-plot
 description: >-
-  Lays out the story in named beats only — no prose, no dialogue — using
-  plot.md. Use when planning story structure, chapter sequences, or scene
-  order.
+  Writer skill. Lays out the story in named beats only — no prose, no
+  dialogue — using plot.md. Use when planning story structure, chapter
+  sequences, or scene order.
 ---
 
 ## Plot outlining

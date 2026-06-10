@@ -1,10 +1,8 @@
 ---
 name: writer-edit
 description: >-
-  Writer skill. Revises chapter prose based on reader reviews, lectorate
-  consistency checks, chapter metadata, and existing prose. References
-  style policy, worldbuilding policy, and chapter/character style files.
-  Use when incorporating feedback or polishing existing manuscript content.
+  Change. Revise. Adapt. Rework. Incorporate feedback. Reference style
+  policy, worldbuilding policy, and chapter/character style files.
 ---
 
 ## Editing workflow

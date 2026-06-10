@@ -37,6 +37,9 @@ project/
 |  |  |- places/
 |  |  |- timeline/
 |  |  |- worldbuilding policy.md
+|- user generated content/
+|  |- source/
+|  |- notes/
 |- plot.md
 |- glossary.md
 |- .gitignore

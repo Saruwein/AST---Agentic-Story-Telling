@@ -1,9 +1,8 @@
 ---
 name: writer-prose
 description: >-
-  Writer skill. Drafts and revises chapter prose following established
-  header formats. References style, worldbuilding, character files, and
-  the branch glossary. Use when drafting or revising manuscript content.
+  Write. Compose. Output manuscript. Reference style, worldbuilding,
+  character files, and the branch glossary.
 ---
 
 ## Prose writing

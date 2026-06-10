@@ -33,11 +33,13 @@ All agents are `mode: subagent` and carry their own `permission:` rules.
 
 | Skill | Triggers on |
 |---|---|---|
-| `writer-plot` | Plot outlining, beat structure, scene order |
-| `writer-prose` | Drafting or revising chapter prose |
-| `writer-edit` | Revising prose based on reader/lectorate feedback |
-| `reader-analysis` | Reader-perspective feedback (summary, depiction, vibe) |
-| `lectorate-style` | Style assessment against 7 categories |
+| `writer-plot` | Outline, Plan, Structure, Order scenes |
+| `writer-prose` | Write, Compose, Output manuscript |
+| `writer-edit` | Change, Revise, Adapt, Rework |
+| `writer-dissect` | Analyze, Dissect, Import, Extract |
+| `reader-impression` | Summarize, Depict, Describe vibe |
+| `lectorate-style` | Check, Assess, Evaluate, Review |
+| `style-listing` | List style categories |
 
 Skills are loaded automatically when the task matches their `description`.
 
@@ -50,6 +52,8 @@ Skills are loaded automatically when the task matches their `description`.
 | `frontmatter/` | Book metadata (title, author, status) | publishing / lectorate |
 | `appendix/public/` | Reader-facing appendices (maps, glossaries) | writer |
 | `appendix/writer/` | Working notes, alternate drafts | writer |
+| `user generated content/source/` | Raw import text (pre-sectioning) | writer |
+| `user generated content/notes/` | Supplementary author material | writer |
 
 ## Meta (agent-facing) content
 

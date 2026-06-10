@@ -12,7 +12,7 @@ Framework terms used across the project.
 
 ## Agents
 
-**writer** — drafts prose, maintains `plot.md` and TOC, manages writer appendices.
+**writer** — drafts, edits, and imports prose; maintains `plot.md`, TOC, glossary, characters, worldbuilding files.
 
 **reader** — natural-language story analysis. No metadata access.
 
@@ -40,13 +40,19 @@ Framework terms used across the project.
 
 ## Skills
 
-**writer-plot** — beat-level plot outlining with `plot.md`.
+**writer-plot** — Outline. Plan. Structure. Order scenes.
 
-**writer-prose** — drafting and revising chapter prose.
+**writer-prose** — Write. Compose. Output manuscript.
 
-**reader-analysis** — natural-language summarise, depict, assess, vibe.
+**writer-edit** — Change. Revise. Adapt. Rework.
 
-**lectorate-style** — style assessment across the seven categories.
+**writer-dissect** — Analyze. Dissect. Import. Extract.
+
+**reader-impression** — Summarize. Depict. Describe vibe.
+
+**lectorate-style** — Check. Assess. Evaluate. Review.
+
+**style-listing** — List style categories.
 
 ## Policies
 

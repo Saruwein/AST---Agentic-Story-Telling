@@ -29,6 +29,12 @@ Connect:
 
 ## Workflows
 
+### Importing existing text
+
+1. Place your raw story text in `user generated content/source/` and any notes in `user generated content/notes/`.
+2. Ask the **writer** to import it — the `writer-dissect` skill reads the text, proposes a chapter/section breakdown, and waits for your approval.
+3. Once approved, the writer sections the text into `mainmatter/Chap{N}.md`, creates chapter meta files, and proposes character sheets, place files, and timeline entries for recurring elements.
+
 ### Writing a chapter
 
 1. Ask the **writer** agent to draft a chapter. It creates `mainmatter/Chap{N}.md` and the corresponding `meta-mainmatter/chapters/Chap{N}-meta.md`.
@@ -84,11 +90,13 @@ Each agent carries its own permission rules. Ask an agent by name (`"act as writ
 
 | Skill | Use |
 |---|---|
-| `writer-plot` | Beat-level plot outlining with `plot.md` |
-| `writer-prose` | Drafting chapter prose |
-| `writer-edit` | Revising prose based on reader/lectorate feedback |
-| `reader-analysis` | Natural-language summarisation, depiction, assessment, vibe |
-| `lectorate-style` | Style assessment across seven categories |
+| `writer-plot` | Outline. Plan. Structure. Order scenes. |
+| `writer-prose` | Write. Compose. Output manuscript. |
+| `writer-edit` | Change. Revise. Adapt. Rework. |
+| `writer-dissect` | Analyze. Dissect. Import. Extract. |
+| `reader-impression` | Summarize. Depict. Describe vibe. |
+| `lectorate-style` | Check. Assess. Evaluate. Review. |
+| `style-listing` | List style categories. |
 
 Skills are loaded automatically when the task matches their description.
 
@@ -108,6 +116,8 @@ See `project structure.md` for a full layout reference and `dev docs.md` for the
 - Characters → `meta-mainmatter/characters/`
 - Worldbuilding → `meta-mainmatter/worldbuilding/`
 - Plot outline → `plot.md`
+- Import source → `user generated content/source/` (raw text before sectioning)
+- Author notes → `user generated content/notes/`
 - Agent and skill definitions → `.opencode/agents/` and `.opencode/skills/`
 
 ### Git usage

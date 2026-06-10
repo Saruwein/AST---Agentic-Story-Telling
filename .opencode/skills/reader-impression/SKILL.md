@@ -1,9 +1,8 @@
 ---
-name: reader-analysis
+name: reader-impression
 description: >-
-  Reader skill. Summarises plot, depicts characters, assesses story
-  points, and describes vibe using natural language only — no metadata,
-  no file paths. Use for reader-perspective feedback.
+  Summarize. Depict. Describe vibe. Reader-perspective feedback using
+  natural language only — no metadata, no file paths.
 ---
 
 ## Reader analysis
